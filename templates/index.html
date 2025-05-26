@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Quality Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="header">💧 Water Quality Analyzer</h1>
+        <div class="form-container">
+            <form action="/predict" method="post" class="predict-form">
+                <input type="number" name="pH" step="0.01" placeholder="pH Level" required>
+                <input type="number" name="Dissolved_Oxygen" step="0.01" placeholder="Dissolved Oxygen (mg/L)" required>
+                <input type="number" name="Salinity" step="0.01" placeholder="Salinity (ppt)" required>
+                <input type="number" name="Secchi_Depth" step="0.01" placeholder="Secchi Depth (m)" required>
+                <input type="number" name="Water_Depth" step="0.01" placeholder="Water Depth (m)" required>
+                <input type="number" name="Water_Temp" step="0.01" placeholder="Water Temperature (°C)" required>
+                <input type="number" name="Air_Temp" step="0.01" placeholder="Air Temperature (°C)" required>
+                <button type="submit">🔍 Predict Water Quality</button>
+            </form>
+            {% if prediction_text %}
+                <div class="result">{{ prediction_text }}</div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

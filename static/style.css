@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: 
+        linear-gradient(135deg, rgba(211, 204, 227, 0.7), rgba(233, 228, 240, 0.7)),
+        url('https://getwallpapers.com/wallpaper/full/5/9/d/1006179-top-water-droplets-wallpaper-2880x1800.jpg') no-repeat center center fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    width: 75%;
+    max-width: 600px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.header {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2d3436;
+}
+
+.predict-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.predict-form input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.predict-form input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.3);
+    outline: none;
+}
+
+.predict-form button {
+    padding: 14px;
+    font-size: 16px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.predict-form button:hover {
+    background: #5a4bcf;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #0984e3;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

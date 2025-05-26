@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(163, 216, 227, 0.3), rgba(90, 206, 234, 0.3)),
+                url('https://getwallpapers.com/wallpaper/full/5/9/d/1006179-top-water-droplets-wallpaper-2880x1800.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+     /* display: flex; */
+     /* flex-direction: column;
+     justify-content: center;
+     align-items: center;   */
+    
+    min-height: 100vh;
+    /* height: 100vh; */
+}
+
+.container {
+    padding-top: 0px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+a {
+    background-color: white;
+    color: #2193b0;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #e6f2f5;
+    transform: scale(1.05);
+}
+
